@@ -4,7 +4,7 @@
 void HoT(void);
 int countH=0,countT=0;
 int main(){
-  char name[1];
+  char name[10];
   printf("Who are you?\n");
   scanf("%s",&name);
   printf("Hello, %s!\n",name);
