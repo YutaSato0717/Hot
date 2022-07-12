@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 void HoT(void);
 int countH=0,countT=0;
 int main(){
@@ -14,7 +15,7 @@ int main(){
     HoT();
     printf("\n");
   }  printf("Heads: %d, Tails: %d\n",countH,countT);
-  if(countH>countT)printf("% won!\n");
+  if(countH>countT)printf("You won!\n");
   else if(countH<countT)printf("You lost!\n");
   return 0;
 }
