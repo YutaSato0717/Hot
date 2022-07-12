@@ -4,19 +4,19 @@
 void HoT(void);
 int countH=0,countT=0;
 int main(){
-  char name[1];
+  char name[10];
   printf("Who are you?\n");
   scanf("%s",&name);
   printf("Hello, %s!\n",name);
-  printf("Tpssing a coin...\n");
+  printf("Tossing a coin...\n");
   srand(time(NULL));
   for(int i=1;i<4;i++){
     printf("Round %d: ",i);
     HoT();
     printf("\n");
   }  printf("Heads: %d, Tails: %d\n",countH,countT);
-  if(countH>countT)printf("You won!\n");
-  else if(countH<countT)printf("You lost!\n");
+  if(countH>countT)printf("%s won!\n",name);
+  else if(countH<countT)printf("%s lost!\n",name);
   return 0;
 }
 
