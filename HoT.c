@@ -3,6 +3,10 @@
 void HoT(void);
 int countH=0,countT=0;
 int main(){
+  char name;
+  printf("Who are you?\n");
+  scanf("%c",&name);
+  printf("Hello, John!\n");
   printf("Tpssing a coin...\n");
   for(int i=1;i<4;i++){
     printf("Round %d: ",i);
@@ -22,7 +26,7 @@ void HoT(void){
   }
   else if(n==1){
     printf("Tails");
-      countT++;
+    countT++;
   }
 }
 
