@@ -1,13 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 void HoT(void);
 int countH=0,countT=0;
 int main(){
-  char name;
+  char name[1];
   printf("Who are you?\n");
-  scanf("%c",&name);
-  printf("Hello, John!\n");
+  scanf("%s",&name);
+  printf("Hello, %s!\n",name);
   printf("Tpssing a coin...\n");
+  srand(time(NULL));
   for(int i=1;i<4;i++){
     printf("Round %d: ",i);
     HoT();
@@ -30,5 +32,5 @@ void HoT(void){
   }
 }
 
-  
+
   
